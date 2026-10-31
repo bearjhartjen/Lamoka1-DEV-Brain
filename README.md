@@ -1,14 +1,12 @@
-<p align="center">
+<h1 align="center">
   <img
-    src="https://raw.githubusercontent.com/bearjhartjen/Lamoka1-DEV-Brain/master/Images/Lamoka1-DEV-Brain-image.webp"
+    src="https://raw.githubusercontent.com/bearjhartjen/Lamoka1-DEV-Brain/master/Images/Lamoka1-DEV-Brain-hero.webp"
     alt="Lamoka1 DEV Brain"
     width="700"
   >
-</p>
-
-<p align="center">
-  <strong>Lamoka1-DEV-Brain</strong>
-</p>
+  <br>
+  Lamoka1-DEV-Brain
+</h1>
 
 <p align="center">
   This board can now be ordered
