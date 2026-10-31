@@ -18,11 +18,11 @@
 <p align="center">
   PIE versions v1.8 and below will function on this board.
   For more information on PIE, go
-  <a href="../SOFTWARE/README.md">here</a>.
+  <a href="SOFTWARE/README.md">here</a>.
 </p>
 
 <p align="center">
-  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/bearjhartjen/Lamoka1-DEV-Brain/master/Kicad%20files/BOM/Lamoka1-DEV-Brain.html">
+  <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/bearjhartjen/Lamoka1-DEV-Brain/master/HARDWARE/Kicad%20files/BOM/Lamoka1-DEV-Brain.html">
     <strong>View Interactive BOM</strong>
   </a>
 </p>
@@ -57,4 +57,4 @@ There, you will be able to order the Lamoka1-DEV-Brain exactly as we did.
 
 ## Tests
 
-We were able to run the Lamoka1-DEV-Brain for 72 hours running the idle blue dot bouncing animation seen in [PIE v1.8](<../SOFTWARE/Portal Interface Engine/V1.8.ino>). The environment was an average of 70 degrees Fahrenheit, and an average humidity of 70 percent. We stopped the test early (there were no signs of issues) because we needed to use the Lamoka1-DEV-Brain to test the HTML file creation concept for getting diagnostic data off of the Lamoka1.
+We were able to run the Lamoka1-DEV-Brain for 72 hours running the idle blue dot bouncing animation seen in [PIE v1.8](SOFTWARE/Portal%20Interface%20Engine/V1.8.ino). The environment was an average of 70 degrees Fahrenheit, and an average humidity of 70 percent. We stopped the test early (there were no signs of issues) because we needed to use the Lamoka1-DEV-Brain to test the HTML file creation concept for getting diagnostic data off of the Lamoka1.

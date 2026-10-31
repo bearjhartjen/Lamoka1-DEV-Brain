@@ -2,11 +2,11 @@
 
 The **Lamoka1 DEV-Brain V1.8** is the Raspberry Pi RP2354A firmware that operates the Lamoka1-DEV-Brain's user interface, ten WS2812B RGB LEDs, and a single control button. V1.8 is built around a simple one-button interface, with the button's different press durations and combinations used to navigate menus, select modes, change settings, play the Fireball game, and return to the default idle state.
 
-The firmware is written using Arduino functionality together with the **FastLED** library for LED control and the Raspberry Pi Pico boot ROM interface for USB BOOTSEL mode.
+The firmware uses the [Arduino-Pico core](https://github.com/earlephilhower/arduino-pico) for the Arduino framework and RP235x platform support, the [FastLED library](https://github.com/FastLED/FastLED) for LED control, and the Pico SDK `pico/bootrom.h` header (provided through Arduino-Pico) for USB BOOTSEL mode. The source sketch is [V1.8.ino](V1.8.ino).
 
 ### Hardware Interface
 
-V1.8 directly defines the following hardware connections (per HARDWARE/COMPONENTS.md, MCU is RP2354A made by Raspberry Pi):
+V1.8 directly defines the following hardware connections (per the [DEV-Brain KiCad schematic](../../HARDWARE/Kicad%20files/Lamoka1-DEV-board.kicad_sch), MCU is RP2354A made by Raspberry Pi):
 
 * **GPIO 11** — WS2812B LED data (WS2812B made by WorldSemi)
 * **GPIO 0** — User button (B3F-4055 made by Aratas)
