@@ -214,3 +214,7 @@ Kicad files/**/*.obj
 Kicad files/**/*.stl
 Kicad files/**/*.3mf
 # END LAMOKA KICAD PRIVATE FILES
+
+
+# Ignore all component library files (footprints, symbols, 3D models)
+HARDWARE/Kicad files/components/
