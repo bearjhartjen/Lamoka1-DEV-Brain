@@ -218,3 +218,10 @@ Kicad files/**/*.3mf
 
 # Ignore all component library files (footprints, symbols, 3D models)
 HARDWARE/Kicad files/components/
+HARDWARE/Kicad files/fp-lib-table
+HARDWARE/Kicad files/sym-lib-table
+HARDWARE/Kicad files/*.kicad_sym
+HARDWARE/Kicad files/*.kicad_mod
+HARDWARE/Kicad files/*.pretty/
+HARDWARE/Kicad files/**/*.kicad_sym
+HARDWARE/Kicad files/**/*.kicad_mod
