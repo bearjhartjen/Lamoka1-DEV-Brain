@@ -1,6 +1,6 @@
 <h1 align="center">
   <img
-    src="https://raw.githubusercontent.com/bearjhartjen/Lamoka1-DEV-Brain/master/Images/Lamoka1-DEV-Brain-hero.webp"
+    src="Images/lamoka1-dev-brain-render-iso.png"
     alt="Lamoka1 DEV Brain"
     width="700"
   >

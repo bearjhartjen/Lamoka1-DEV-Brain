@@ -1,0 +1,31 @@
+#!/bin/sh
+# Regenerate the 3D renders before a commit that touches the board.
+#
+# Only writes when a fresh top-view render differs from the committed one,
+# so doc/firmware commits and no-op board edits cost nothing.
+#
+# Installed by tools/install-hooks.sh (sets core.hooksPath=.githooks).
+# Bypass once with: git commit --no-verify
+
+set -e
+repo=$(git rev-parse --show-toplevel)
+cd "$repo"
+
+if [ ! -f tools/render_3d.py ]; then
+    echo "pre-commit: tools/render_3d.py missing; skipping 3D render." >&2
+    exit 0
+fi
+
+# GitKraken on this machine is the Flatpak build, whose sandbox has no
+# kicad-cli. flatpak-spawn --host runs the renderer on the real machine.
+if command -v kicad-cli >/dev/null 2>&1; then
+    python3 "$repo/tools/render_3d.py"
+elif command -v flatpak-spawn >/dev/null 2>&1; then
+    flatpak-spawn --host python3 "$repo/tools/render_3d.py"
+else
+    python3 "$repo/tools/render_3d.py"
+fi
+
+# -A so a render the script deleted (stale file) is staged as a deletion.
+git add -A -- Images
+# exit status of the renderer must not be masked by git add
